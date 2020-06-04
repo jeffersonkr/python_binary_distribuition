@@ -46,4 +46,4 @@ jobs:
       if: ${{ success() }}
       with:
         name: my-artifact
-        path: dist/app-0.1.0-cp3*-cp3*m-linux_x86_64
+        path: dist/app-0.1.0-cp3*-cp3*m-linux_x86_64.whl
