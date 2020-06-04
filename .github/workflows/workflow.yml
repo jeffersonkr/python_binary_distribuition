@@ -38,8 +38,11 @@ jobs:
     - name: Test with pytest
       run: |
         pytest -vv
+    - name: build
+      run: |
+        python setup.py bdist_wheel
     - uses: actions/upload-artifact@v2
       if: ${{ success() }}
       with:
         name: my-artifact
-        path: dist/app-0.1.0-cp37-cp37m-linux_x86_64
+        path: dist/app-0.1.0-cp3*-cp3*m-linux_x86_64
