@@ -15,4 +15,3 @@ class People:
 
     def get_older(self, year=1):
         self._age += year
-        

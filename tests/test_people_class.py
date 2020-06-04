@@ -1,5 +1,5 @@
 import pytest
-from models.people import People
+from app.models.people import People
 
 @pytest.fixture(scope='function')
 def new_people():
