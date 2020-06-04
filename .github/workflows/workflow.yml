@@ -42,4 +42,4 @@ jobs:
       if: ${{ success() }}
       with:
         name: my-artifact
-        path: build/
+        path: dist/app-0.1.0-cp37-cp37m-linux_x86_64
