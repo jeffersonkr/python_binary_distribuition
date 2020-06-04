@@ -37,8 +37,10 @@ setup(
     version='0.1.0',
     author='Jefferson Kwak',
     packages=find_packages(exclude=('*tests',)),
-    build_dir="build",
-    ext_modules=cythonize(extensions, exclude=cython_excludes),
+    ext_modules=cythonize(
+        extensions, 
+        exclude=cython_excludes, 
+        compiler_directives={'language_level' : "3"}),
     cmdclass=dict(
         build_ext=CustomBuild
     ),
