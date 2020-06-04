@@ -41,6 +41,7 @@ jobs:
     - name: build
       run: |
         python setup.py bdist_wheel
+        ls -la dist/
     - uses: actions/upload-artifact@v2
       if: ${{ success() }}
       with:
